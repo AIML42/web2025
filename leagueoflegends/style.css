@@ -1,0 +1,310 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li,button,span{
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Navbar section */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E0B09;
+    height: 10vh;
+    padding: 0 40px;
+}
+
+.navbar .burger {
+    display: none;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .logo img{
+    width: 38px;
+    height: 38px;
+}
+
+.navbar .logo h3 a{
+    font-size: 20px;
+    color: #FFFFFFFF;
+    font-weight: 400;
+}
+
+.navbar .menu .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navbar .menu .nav-links a{
+    font-size: 16px;
+    color: white;
+}
+
+@media(max-width:900px){
+    .navbar .menu{
+        display: none;
+    }
+
+    .navbar .burger{
+        display: block;
+    }
+
+    .navbar .burger div{
+        background-color: white;
+        height: 3px;
+        width: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Hero section */
+.hero{
+    height: 90vh;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_54.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.hero .content{
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.hero .content h3{
+    color: black;
+    font-size: 30px;
+}
+
+.hero .content h1{
+    color: white;
+    font-size: 50px;
+}
+
+@media(max-width:700px) {
+
+    .hero{
+        background-position: right;
+    }
+    
+    .hero .content h3{
+        font-size: 15px;
+    }
+    
+    .hero .content h1{
+        color: white;
+        font-size: 30px;
+    }
+}
+
+/* About section */ 
+.about{
+    background-color: #232428;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 200px;
+    padding: 200px 0;
+}
+
+.about h2{
+    color: #BEBEBE;
+    font-size: 50px;
+}
+
+.about .about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+
+.about .about-container .about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.about .about-container .about-card h3{ 
+    color: white;
+    /* font-size: 15px; */
+    font-weight: 400;
+}
+
+.about .about-container .about-card p{ 
+    color: #717A87;
+    
+}
+
+/* Skin section */
+.services{
+    background-color: #1F212A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    padding: 150px 0;
+
+}
+
+.services h2{
+    color: #BEBEBE;
+    font-size: 50px;
+}
+
+.services .services-container .services-card img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.services .services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.services .services-container .services-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.services .services-container .services-card h3{ 
+    color: white;
+    /* font-size: 15px; */
+    font-weight: 400;
+}
+
+
+/* Montage section */ 
+.montages{
+    background-color: #1F212A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    padding: 100px 0;
+
+}
+
+.montages h2{
+    color: #BEBEBE;
+    font-size: 50px;
+}
+
+
+.montages .montages-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.montages .montages-container .montage-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.montages .montages-container .montage-card h3{ 
+    color: white;
+    /* font-size: 15px; */
+    font-weight: 400;
+}
+
+
+/* Footer section */ 
+.footer{
+    background-color: #6C4343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .top-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.footer .top-footer .footerimg{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer .top-footer h2{
+    color: #956767;
+    font-size: 50px;
+}
+
+.footer .top-footer h3{
+    color: white;
+    font-size: 30px;
+}
+
+.footer .bottom-footer{
+    border-top: 1px solid #1F212A;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
